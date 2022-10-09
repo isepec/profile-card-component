@@ -1,0 +1,140 @@
+/* ===== General ===== */
+:root {
+    --clr-dark-0: hsl(229, 23%, 23%);
+    --clr-dark-1: hsl(227, 10%, 46%);
+    
+    --clr-accent: hsl(185, 75%, 39%);
+
+    --clr-neutral-0: hsl(0, 0%, 59%);
+    --clr-neutral-max: white;
+
+    --clr-line: hsl(0, 0%, 59%, 25%);
+    --shadow: 0 3.125rem 5rem hsla(190, 100%, 25%, 60%);
+
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    min-height: 100%;
+}
+
+body {
+    background: url(images/bg-pattern-top.svg) bottom 35vh right 51.9vw,
+                url(images/bg-pattern-bottom.svg) top 52.1vh left 48vw,
+                var(--clr-accent);
+
+    background-repeat: no-repeat;
+}
+
+img {
+    display: block;
+}
+
+main {
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+/* ===== Card ===== */
+.card {
+    background: var(--clr-neutral-max);
+    box-shadow: var(--shadow);
+
+    margin: 1.5rem;
+
+    border-radius: 1rem;
+    overflow: hidden;
+
+    transition: transform .3s;
+}
+
+.card:hover{
+    transform: scale(1.1);
+}
+
+.card__img-hero-container {
+    position: relative;
+}
+
+.card__img-avatar {
+    outline: white 0.3125rem solid;
+    border-radius: 100%;
+
+    position: absolute;
+    bottom: -3rem;
+    right:0;
+    left: 0;
+    margin: auto;
+}
+
+
+.card__user-info {
+    margin-top: 4.5rem;
+
+    text-align: center;
+
+    border-bottom: solid 0.0625rem var(--clr-line);
+}
+
+.card__user-name {
+    color: var(--clr-dark-0);
+
+    font-size: 1.125rem;
+
+    margin-bottom: 0.5rem;
+}
+
+.card__user-age {
+    color: var(--clr-dark-1);
+
+    font-weight: 400;
+
+    margin-left: 0.625rem;
+}
+
+.card__user-location {
+    color: var(--clr-dark-1);
+
+    font-size: 0.875rem;
+    font-weight: 400;
+
+    margin-bottom: 1.5rem;
+}
+
+.card__stats {
+    display: flex;
+    justify-content:center;
+    
+    text-align: center;
+    list-style: none;
+    padding: 1.25rem 0 1.5rem;
+
+    width: 85%;
+    margin: auto;
+}
+
+.card__stats li {
+    color: var(--clr-dark-1);
+
+    font-size: 0.5625rem;
+    font-weight: 400;
+    letter-spacing: 0.125rem;
+
+    width: 100%;
+}
+
+.card__stats span {
+    color: var(--clr-dark-0);
+
+    font-size: 1.125rem;
+    font-weight: 700;
+    letter-spacing: 0.0313rem;
+    line-height: 1.8;
+}
