@@ -43,7 +43,7 @@ Mobile
 - Semantic HTML5 markup
 - CSS custom properties
 - Responsive design
-- Grid
+- Flexbox
 
 ### What I learned
 
